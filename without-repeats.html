@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How long can we play without repeats - [Tour] Missions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <div class="container">
+      
+<nav class="sticky-top navbar">
+  <a class="btn btn-sm btn-outline-dark" href="/" role="button"><i class="bi bi-arrow-left-circle"></i>&nbsp;Back to start</a>
+  
+</nav>
+
+      <header>
+        
+<p class="playlist-lead">
+  There are <strong>41</strong> unique missions uploaded to the server.<br>
+  We can play without repeats for estimated <mark><strong>28h &ndash; 60h</strong></mark> or <strong>12</strong> game sessions.
+</p>
+
+      </header>
+      <main>
+        
+<form>
+  <div class="playlist-textarea">
+    <textarea class="form-control" id="gameSessionsTextarea">Example of 12 sessions without repeats
+Generated on 2022-09-19 18:14 UTC
+
+Session 1
+- USMC DYNAMIC MISSIONS (1h &ndash; 2h 30 min)
+- MORTAR VALLEY (2h &ndash; 2h 30 min)
+
+Session 2
+- HERRICK (50 min &ndash; 2h 30 min)
+- SEVEN HEADS EP2 (1h &ndash; 2h 15 min)
+
+Session 3
+- CONFLICT OF INTERESTS (1h 30 min &ndash; 2h 15 min)
+- OPERATION NIGHTBREAKER (1h 15 min &ndash; 2h 15 min)
+- CLOSE QUARTERS (10 min &ndash; 20 min)
+
+Session 4
+- OPERATION REDACTED (50 min &ndash; 2h 15 min)
+- IED PATROL PVP (1h &ndash; 2h 15 min)
+- SECTOR SWEEP INDEP (20 min &ndash; 40 min)
+
+Session 5
+- OIL CRISIS (1h 15 min &ndash; 2h)
+- OCCUPATIONAL HAZARDS (1h &ndash; 2h)
+- FROGMEN (20 min &ndash; 50 min)
+
+Session 6
+- PORTO ASSAULT (50 min &ndash; 2h)
+- RESISTANCE (40 min &ndash; 2h)
+- TARGET ACQUIRED (30 min &ndash; 1h)
+
+Session 7
+- BASIC PATROL (1h 15 min &ndash; 2h)
+- US ARMY DYNAMIC MISSIONS (40 min &ndash; 1h 45 min)
+- BLACK HAWK DOWN (20 min &ndash; 1h)
+- MAXWELL DEFENCE (10 min &ndash; 15 min)
+
+Session 8
+- AIRBASE ASSAULT (1h &ndash; 1h 45 min)
+- USSR DYNAMIC MISSIONS (25 min &ndash; 1h 45 min)
+- DOWNPOUR (40 min &ndash; 1h 15 min)
+
+Session 9
+- HOTEL BABYLON (50 min &ndash; 1h 45 min)
+- INTEL RECOVERY (1h &ndash; 1h 45 min)
+- ONSLAUGHT (50 min &ndash; 1h)
+- HOT PURSUIT (15 min &ndash; 25 min)
+
+Session 10
+- MALDEN 1985 (50 min &ndash; 1h 45 min)
+- WINTER BREAK (1h &ndash; 1h 45 min)
+- CDF DYNAMIC MISSIONS (40 min &ndash; 1h 30 min)
+
+Session 11
+- POWER SURGE (40 min &ndash; 1h 45 min)
+- MOTOSTRELKI (50 min &ndash; 1h 45 min)
+- RELIEF FORCE (25 min &ndash; 1h 30 min)
+
+Session 12
+- ISLAND EVICTION (5 min &ndash; 1h 30 min)
+- DESERT STORM (30 min &ndash; 50 min)
+- HIT AND RUN (30 min &ndash; 50 min)
+- GLASS CANNON (30 min &ndash; 40 min)
+- EMBASSY DEFENCE (10 min &ndash; 20 min)</textarea>
+    <button class="btn btn-primary" type="button" onclick="copyGameSessions()" id="gameSessionsCopyButton">
+      <i class="bi bi-clipboard-fill" id="gameSessionsCopyIcon"></i> Copy to clipboard
+    </button>
+  </div>
+  <script>
+    function copyGameSessions() {
+      let copyText = document.getElementById("gameSessionsTextarea");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); 
+      navigator.clipboard.writeText(copyText.value);
+
+      let icon = document.getElementById("gameSessionsCopyIcon");
+      icon.className = "bi bi-clipboard-check-fill";
+
+      let button = document.getElementById("gameSessionsCopyButton");
+      button.className = "btn btn-secondary";
+    }
+  </script>
+</form>
+
+
+      </main>
+      <footer class="footer">
+  <div class="footer-left">
+    <p>
+      There are <strong>69</strong> unique missions, of which
+      <strong>41</strong> are currently uploaded.
+    </p>
+    <p>
+      We can play without repeats for estimated <strong>41h</strong> 
+      or 12 game sessions (<a href="/without-repeats.html">example</a>).
+    </p>
+    <p>
+      Based on the past 6 weeks, our playerbase is <strong>39</strong> strong.
+      In total we have hosted <strong>101</strong> players.
+    </p>
+  </div>
+  <div class="footer-right">
+    <p>The <mark>last played</mark> dates are approximate</p>
+    <p>Page generated on <strong>2022-09-19 18:14</strong> UTC</p>
+    <p>Based on data fetched on <strong>2022-09-19 18:14</strong> UTC</p>
+  </div>
+</footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
+  </body>
+</html>
