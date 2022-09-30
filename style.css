@@ -162,12 +162,30 @@
 
 .listing-card-header {
   grid-column-start: span 4;
-  margin: 2rem;
+  margin: 2rem 0 0.5rem 0;
   grid-row-start: span 1;
 }
 
 .listing-card h2 {
   font-size: 1.5rem;
+}
+
+.listing-card-header ul {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.listing-card-header li {
+  font-size: 1rem;
+  color: rgb(108, 117, 125);
+  list-style-type: none;
+  display: inline-block;
+}
+
+.listing-card-header li:not(:last-child)::after {
+  content: " ·";
+  margin: 0 0.25rem 0 0.25rem;
 }
 
 .listing-card-property {
@@ -228,6 +246,15 @@
 
   .listing-card h2 {
     font-size: 1.25rem;
+  }
+
+  .listing-card-header li {
+    font-size: 0.8rem;
+  }
+
+  .listing-card-header li:not(:last-child)::after {
+    content: " ·";
+    margin: 0 0.1rem 0 0.1rem;
   }
 
   .listing-card h3 {
